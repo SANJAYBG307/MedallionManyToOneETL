@@ -1,0 +1,74 @@
+# ------------------------------
+# OS / Editor
+# ------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ------------------------------
+# Python cache / bytecode
+# ------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ------------------------------
+# Virtual environments
+# ------------------------------
+.venv/
+venv/
+env/
+myenv/
+
+# ------------------------------
+# Python tooling
+# ------------------------------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# ------------------------------
+# Build / packaging
+# ------------------------------
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ------------------------------
+# Jupyter
+# ------------------------------
+.ipynb_checkpoints/
+
+# ------------------------------
+# Secrets / local config
+# ------------------------------
+.env
+.env.*
+!.env.example
+INTERVIEW_STAR_STORY.md
+
+# ------------------------------
+# ETL generated artifacts
+# ------------------------------
+**/logs/*.log
+**/logs/*_stage_metrics.jsonl
+**/logs/*_data_quality_checks.jsonl
+**/logs/*_run_summary.json
+**/parquet/**/*.parquet
+
+# Keep folder structure in git
+!**/logs/.gitkeep
+!**/parquet/.gitkeep
+!**/parquet/bronze/.gitkeep
+!**/parquet/silver/.gitkeep
+!**/parquet/gold/.gitkeep
+Shipment_Geography_ETL_Pipeline/logs/*.log
+Shipment_Geography_ETL_Pipeline/logs/*_stage_metrics.jsonl
+Shipment_Geography_ETL_Pipeline/logs/*_data_quality_checks.jsonl
+Shipment_Geography_ETL_Pipeline/logs/*_run_summary.json
+Shipment_Geography_ETL_Pipeline/parquet/**/*.parquet
