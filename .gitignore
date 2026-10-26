@@ -51,6 +51,7 @@ dist/
 .env.*
 !.env.example
 INTERVIEW_STAR_STORY.md
+RESUME_PROJECT_INFO.md
 
 # ------------------------------
 # ETL generated artifacts
